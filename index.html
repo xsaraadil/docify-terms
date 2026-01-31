@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Docify</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, #3F51B5, #2196F3);
+        }
+        
+        h1 {
+            color: #3F51B5;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: #3F51B5;
+            border-radius: 2px;
+        }
+        
+        h2 {
+            color: #2196F3;
+            font-size: 24px;
+            margin: 30px 0 15px;
+            border-left: 4px solid #2196F3;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #FF9800;
+            font-size: 20px;
+            margin: 25px 0 10px;
+        }
+        
+        .last-updated {
+            background: linear-gradient(135deg, #E3F2FD, #F3E5F5);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: center;
+            border: 2px dashed #3F51B5;
+        }
+        
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        li::before {
+            content: "•";
+            color: #3F51B5;
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+        
+        .note-box {
+            background: linear-gradient(135deg, #FFF3E0, #FCE4EC);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #FF9800;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .warning-box {
+            background: linear-gradient(135deg, #FFEBEE, #F3E5F5);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 5px solid #F44336;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .contact-box {
+            background: linear-gradient(135deg, #E8F5E9, #E3F2FD);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+            border: 2px solid #4CAF50;
+            box-shadow: 0 8px 25px rgba(76, 175, 80, 0.2);
+        }
+        
+        .contact-box h3 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        
+        .email-link {
+            display: inline-block;
+            background: #3F51B5;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(63, 81, 181, 0.3);
+        }
+        
+        .email-link:hover {
+            background: #303F9F;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(63, 81, 181, 0.4);
+        }
+        
+        .app-icon {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .app-icon img {
+            width: 100px;
+            height: 100px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .highlight {
+            background: #E3F2FD;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+                margin: 20px auto;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app-icon">
+            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #3F51B5, #2196F3); border-radius: 25px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; box-shadow: 0 10px 30px rgba(63, 81, 181, 0.3);">
+                <i class="fas fa-file-alt"></i>
+            </div>
+            <h3 style="margin-top: 15px; color: #3F51B5;">Docify Document Scanner</h3>
+        </div>
+        
+        <h1>Privacy Policy</h1>
+        
+        <div class="last-updated">
+            <i class="fas fa-calendar-alt"></i> <strong>Last Updated:</strong> January 1, 2024<br>
+            <i class="fas fa-mobile-alt"></i> <strong>App Version:</strong> 1.0.0
+        </div>
+
+        <div class="note-box">
+            <h3><i class="fas fa-info-circle"></i> Quick Summary</h3>
+            <p>Docify respects your privacy. All file processing happens <span class="highlight">locally on your device</span>. We <strong>do NOT</strong> send your files to any external servers.</p>
+        </div>
+
+        <h2><i class="fas fa-database"></i> 1. Information We Collect</h2>
+        <p>We respect your privacy and are committed to protecting your data. Information we collect:</p>
+        <ul>
+            <li><strong>Files you choose:</strong> For conversion and processing only (processed locally on your device)</li>
+            <li><strong>Usage statistics:</strong> Anonymous information to improve the app</li>
+            <li><strong>App settings:</strong> Your personal preferences</li>
+            <li><strong>Error logs:</strong> To help solve technical issues</li>
+        </ul>
+
+        <h2><i class="fas fa-cogs"></i> 2. How We Use Your Information</h2>
+        <p>We use data only to provide better service:</p>
+        <ol>
+            <li>Provide file conversion services (PDF, ZIP, OCR)</li>
+            <li>Improve app performance and stability</li>
+            <li>Fix bugs and solve problems</li>
+            <li>Develop new features based on needs</li>
+            <li>Ensure app security and protect your data</li>
+        </ol>
+
+        <h2><i class="fas fa-shield-alt"></i> 3. Required Permissions</h2>
+        <div class="note-box">
+            <h3><i class="fas fa-key"></i> Permission Explanation</h3>
+            <ul>
+                <li><strong><i class="fas fa-folder"></i> Storage (Read/Write):</strong> To open and save files you choose</li>
+                <li><strong><i class="fas fa-camera"></i> Camera:</strong> To scan documents using OCR</li>
+                <li><strong><i class="fas fa-wifi"></i> Internet (Optional):</strong> For ads only, not for your files</li>
+            </ul>
+            <p><strong>Note:</strong> All files stay on your device. We access your personal files only when you choose them yourself.</p>
+        </div>
+
+        <h2><i class="fas fa-lock"></i> 4. Data Protection</h2>
+        <div class="warning-box">
+            <h3><i class="fas fa-user-shield"></i> Your Data Security</h3>
+            <p>We are committed to protecting your data:</p>
+            <ul>
+                <li><strong>Local Processing:</strong> All conversions happen on your device</li>
+                <li><strong>No Storage:</strong> We don't keep copies of your files</li>
+                <li><strong>No Sharing:</strong> We don't sell or rent your data to anyone</li>
+                <li><strong>Encryption:</strong> We encrypt sensitive data when stored</li>
+            </ul>
+        </div>
+
+        <h2><i class="fas fa-cookie-bite"></i> 5. Cookies & Technologies</h2>
+        <p>We use simple technologies to improve your experience:</p>
+        <ul>
+            <li>Local storage cache (for your settings)</li>
+            <li>Anonymous usage statistics</li>
+            <li>We don't use tracking cookies</li>
+        </ul>
+
+        <h2><i class="fas fa-balance-scale"></i> 6. Your Rights</h2>
+        <p>You have full rights to:</p>
+        <ul>
+            <li>Know what data we collect</li>
+            <li>Request deletion of your data</li>
+            <li>Refuse to grant permissions (with reduced features)</li>
+            <li>Opt-out of ads</li>
+        </ul>
+
+        <h2><i class="fas fa-sync-alt"></i> 7. Policy Changes</h2>
+        <p>We may update this policy. We'll notify you about important changes via:</p>
+        <ul>
+            <li>In-app notification</li>
+            <li>Update to this webpage</li>
+            <li>Email (if you provided one)</li>
+        </ul>
+
+        <div class="contact-box">
+            <h3><i class="fas fa-envelope"></i> Questions & Concerns</h3>
+            <p>We value your feedback and welcome questions about privacy:</p>
+            <a href="mailto:privacy@docify.app?subject=Privacy Policy Inquiry" class="email-link">
+                <i class="fas fa-paper-plane"></i> privacy@docify.app
+            </a>
+            <p style="margin-top: 15px; font-size: 14px; color: #666;">
+                <i class="fas fa-clock"></i> Average response time: 24-48 hours
+            </p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px dashed #ddd; color: #888; font-size: 14px;">
+            <p><i class="far fa-copyright"></i> 2024 Docify. All rights reserved.</p>
+            <p>By browsing this page, you agree to our privacy policy.</p>
+        </div>
+    </div>
+
+    <script>
+        // Add simple interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update date automatically
+            const updateDate = document.querySelector('.last-updated');
+            if (updateDate) {
+                const now = new Date();
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                const formattedDate = now.toLocaleDateString('en-US', options);
+                updateDate.innerHTML = updateDate.innerHTML.replace('January 1, 2024', formattedDate);
+            }
+            
+            // Add scroll effects
+            const sections = document.querySelectorAll('h2, .note-box, .warning-box');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'all 0.5s ease';
+                observer.observe(section);
+            });
+            
+            // Email link animation
+            const emailLink = document.querySelector('.email-link');
+            if (emailLink) {
+                emailLink.addEventListener('mouseenter', function() {
+                    this.innerHTML = '<i class="fas fa-paper-plane"></i> Send Email';
+                });
+                emailLink.addEventListener('mouseleave', function() {
+                    this.innerHTML = '<i class="fas fa-paper-plane"></i> privacy@docify.app';
+                });
+            }
+        });
+    </script>
+</body>
+</html>
