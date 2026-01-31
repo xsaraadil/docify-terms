@@ -5,32 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - Docify</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.8;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
             color: #333;
         }
-        
         .container {
             max-width: 900px;
             margin: 40px auto;
             background: white;
             padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
             position: relative;
             overflow: hidden;
         }
-        
         .container::before {
             content: '';
             position: absolute;
@@ -40,7 +33,6 @@
             height: 6px;
             background: linear-gradient(90deg, #FF9800, #F44336);
         }
-        
         h1 {
             color: #FF9800;
             font-size: 36px;
@@ -49,7 +41,6 @@
             position: relative;
             padding-bottom: 15px;
         }
-        
         h1::after {
             content: '';
             position: absolute;
@@ -61,7 +52,6 @@
             background: #FF9800;
             border-radius: 2px;
         }
-        
         h2 {
             color: #F44336;
             font-size: 24px;
@@ -69,7 +59,6 @@
             border-left: 4px solid #F44336;
             padding-left: 15px;
         }
-        
         .important-box {
             background: linear-gradient(135deg, #FFF3E0, #FFEBEE);
             padding: 20px;
@@ -78,7 +67,6 @@
             border-left: 5px solid #FF9800;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
-        
         .warning-box {
             background: linear-gradient(135deg, #FFEBEE, #FCE4EC);
             padding: 20px;
@@ -87,7 +75,6 @@
             border-left: 5px solid #F44336;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
-        
         .acceptance-box {
             background: linear-gradient(135deg, #E8F5E9, #F1F8E9);
             padding: 20px;
@@ -96,18 +83,12 @@
             border-left: 5px solid #4CAF50;
             text-align: center;
         }
-        
-        ul, ol {
-            margin-left: 25px;
-            margin-bottom: 20px;
-        }
-        
+        ul, ol { margin-left: 25px; margin-bottom: 20px; }
         li {
             margin-bottom: 12px;
             position: relative;
             padding-left: 25px;
         }
-        
         li::before {
             content: "•";
             color: #F44336;
@@ -116,41 +97,25 @@
             left: 0;
             top: -4px;
         }
-        
-        .highlight {
-            background: #FFEBEE;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-weight: bold;
-            color: #D32F2F;
-        }
-        
-        .app-icon {
+        .footer-links {
             text-align: center;
-            margin: 30px 0;
+            margin-top: 30px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
         }
-        
         @media (max-width: 768px) {
-            .container {
-                padding: 25px;
-                margin: 20px auto;
-            }
-            
-            h1 {
-                font-size: 28px;
-            }
-            
-            h2 {
-                font-size: 22px;
-            }
+            .container { padding: 25px; margin: 20px auto; }
+            h1 { font-size: 28px; }
+            h2 { font-size: 22px; }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">
-            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #FF9800, #F44336); border-radius: 25px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; box-shadow: 0 10px 30px rgba(255, 152, 0, 0.3);">
+        <div style="text-align: center; margin: 30px 0;">
+            <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #FF9800, #F44336); border-radius: 25px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; box-shadow: 0 10px 30px rgba(255,152,0,0.3);">
                 <i class="fas fa-gavel"></i>
             </div>
             <h3 style="margin-top: 15px; color: #F44336;">Docify Terms of Service</h3>
@@ -160,84 +125,78 @@
         
         <div class="important-box">
             <h3><i class="fas fa-exclamation-triangle"></i> Important Notice</h3>
-            <p>By continuing to use the Docify application, you agree to these terms and conditions.</p>
+            <p>By using Docify, you agree to these terms and conditions.</p>
         </div>
 
         <h2><i class="fas fa-check-circle"></i> 1. Acceptance of Terms</h2>
-        <p>Your use of the Docify application is subject to these terms and conditions.</p>
+        <p>Your use of Docify is subject to these terms.</p>
 
-        <h2><i class="fas fa-id-card"></i> 2. License Grant</h2>
-        <p>We grant you a limited, non-exclusive license to use Docify for personal purposes.</p>
-
-        <h2><i class="fas fa-ban"></i> 3. Restrictions</h2>
+        <h2><i class="fas fa-ban"></i> 2. Restrictions</h2>
         <p>You may NOT:</p>
         <ul>
-            <li>Reverse engineer or decompile the application</li>
+            <li>Reverse engineer or decompile the app</li>
             <li>Resell or redistribute the service</li>
             <li>Use the app for illegal purposes</li>
             <li>Attempt to bypass security measures</li>
-            <li>Use automated systems to access the app</li>
         </ul>
 
-        <h2><i class="fas fa-file-alt"></i> 4. File Responsibility</h2>
+        <h2><i class="fas fa-file-alt"></i> 3. File Responsibility</h2>
         <div class="warning-box">
             <h3><i class="fas fa-exclamation-circle"></i> Your Responsibility</h3>
-            <p>You are solely responsible for:</p>
             <ul>
                 <li>Files you upload and process</li>
                 <li>Backing up your files</li>
-                <li>Ensuring files don't contain copyrighted material without permission</li>
-                <li>Compliance with local laws regarding file content</li>
+                <li>Ensuring files don't contain copyrighted material</li>
+                <li>Compliance with local laws</li>
             </ul>
         </div>
 
-        <h2><i class="fas fa-shield-alt"></i> 5. Disclaimer of Warranties</h2>
-        <p>Docify is provided <span class="highlight">"AS IS"</span> without any warranties.</p>
+        <h2><i class="fas fa-shield-alt"></i> 4. Disclaimer</h2>
+        <p>Docify is provided "AS IS" without warranties.</p>
         <p>We are not responsible for:</p>
         <ul>
             <li>Any data loss</li>
-            <li>Damages resulting from app use</li>
+            <li>Damages from app use</li>
             <li>Accuracy of conversion results</li>
-            <li>Third-party service interruptions</li>
         </ul>
 
-        <h2><i class="fas fa-balance-scale"></i> 6. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special, consequential, or punitive damages.</p>
+        <h2><i class="fas fa-sync-alt"></i> 5. Modifications</h2>
+        <p>We may update these terms. We will notify you of changes.</p>
 
-        <h2><i class="fas fa-sync-alt"></i> 7. Modifications</h2>
-        <p>We may update these terms from time to time. We will notify you of significant changes through:</p>
-        <ul>
-            <li>In-app notifications</li>
-            <li>Updates to this webpage</li>
-            <li>Email notifications (if provided)</li>
-        </ul>
-
-        <h2><i class="fas fa-flag"></i> 8. Termination</h2>
-        <p>We reserve the right to terminate or suspend your access to Docify if you violate these terms.</p>
-
-        <h2><i class="fas fa-globe"></i> 9. Governing Law</h2>
-        <p>These terms shall be governed by the laws of the country where the app is published.</p>
-
-        <h2><i class="fas fa-envelope"></i> 10. Contact Information</h2>
-        <p>For questions about these terms: <span class="highlight">legal@docify.app</span></p>
+        <h2><i class="fas fa-envelope"></i> 6. Contact</h2>
+        <p>For questions: <strong>legal@docify.app</strong></p>
 
         <div class="acceptance-box">
             <h3><i class="fas fa-handshake"></i> Agreement</h3>
-            <p>By using Docify, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</p>
+            <p>By using Docify, you agree to these Terms of Service.</p>
             <p style="margin-top: 15px; font-size: 14px; color: #666;">
-                <i class="fas fa-calendar-alt"></i> Effective Date: January 1, 2024
+                <i class="fas fa-calendar-alt"></i> Effective Date: <span id="currentDate">January 1, 2024</span>
             </p>
         </div>
 
-        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px dashed #ddd; color: #888; font-size: 14px;">
-            <p><i class="far fa-copyright"></i> 2024 Docify. All rights reserved.</p>
-            <p>Version 1.0</p>
+        <div class="footer-links">
+            <p><strong>Related Documents:</strong></p>
+            <a href="index.html" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
+                <i class="fas fa-shield-alt"></i> Privacy Policy
+            </a>
+            |
+            <a href="terms.html" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
+                <i class="fas fa-file-contract"></i> Terms of Service
+            </a>
+            <p style="margin-top: 20px; color: #888; font-size: 14px;">
+                <i class="far fa-copyright"></i> 2024 Docify. Version 1.0
+            </p>
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Add scroll effects
+            // Update date
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
+            
+            // Scroll effects
             const sections = document.querySelectorAll('h2, .important-box, .warning-box');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -253,19 +212,6 @@
                 section.style.transform = 'translateY(20px)';
                 section.style.transition = 'all 0.5s ease';
                 observer.observe(section);
-            });
-            
-            // Highlight important terms on hover
-            const highlights = document.querySelectorAll('.highlight');
-            highlights.forEach(highlight => {
-                highlight.addEventListener('mouseenter', function() {
-                    this.style.transform = 'scale(1.05)';
-                    this.style.boxShadow = '0 4px 12px rgba(244, 67, 54, 0.3)';
-                });
-                highlight.addEventListener('mouseleave', function() {
-                    this.style.transform = 'scale(1)';
-                    this.style.boxShadow = 'none';
-                });
             });
         });
     </script>
