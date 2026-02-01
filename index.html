@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Docify</title>
+    <title>Privacy Policy - Docifire Document Scanner</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -128,6 +128,18 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(63,81,181,0.4);
         }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #2196F3;
+        }
         @media (max-width: 768px) {
             .container { padding: 25px; margin: 20px auto; }
             h1 { font-size: 28px; }
@@ -149,79 +161,112 @@
             <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #3F51B5, #2196F3); border-radius: 25px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; box-shadow: 0 10px 30px rgba(63,81,181,0.3);">
                 <i class="fas fa-file-alt"></i>
             </div>
-            <h3 style="margin-top: 15px; color: #3F51B5;">Docify Document Scanner</h3>
+            <h3 style="margin-top: 15px; color: #3F51B5;">Docifire Document Scanner</h3>
+            <p style="color: #666; margin-top: 10px;">All-in-One Document Processing App</p>
         </div>
         
         <h1>Privacy Policy</h1>
         
         <div class="last-updated">
             <i class="fas fa-calendar-alt"></i> <strong>Last Updated:</strong> <span id="currentDate">January 1, 2024</span><br>
-            <i class="fas fa-mobile-alt"></i> <strong>App Version:</strong> 1.0.0
+            <i class="fas fa-mobile-alt"></i> <strong>App Version:</strong> 1.0.0<br>
+            <i class="fas fa-globe"></i> <strong>App Name:</strong> Docifire Document Scanner
         </div>
 
         <div class="note-box">
             <h3><i class="fas fa-info-circle"></i> Quick Summary</h3>
-            <p>Docify respects your privacy. All file processing happens <strong>locally on your device</strong>. We <strong>do NOT</strong> send your files to any external servers.</p>
+            <p><strong>Docifire respects your privacy!</strong> All file processing happens <strong>locally on your device</strong>.</p>
+            <p>We <strong>do NOT</strong> store, upload, or share your files with external servers, except for:</p>
+            <ul>
+                <li><strong>Background Removal AI:</strong> Uses Remove.bg API (files are deleted after processing)</li>
+                <li><strong>Ads:</strong> Google AdMob (anonymous data only)</li>
+            </ul>
         </div>
 
         <h2><i class="fas fa-database"></i> 1. Information We Collect</h2>
-        <p>We respect your privacy and are committed to protecting your data:</p>
+        <p>We collect minimal information to provide our services:</p>
         <ul>
-            <li><strong>Files you choose:</strong> For conversion and processing only</li>
-            <li><strong>Usage statistics:</strong> Anonymous information to improve the app</li>
-            <li><strong>App settings:</strong> Your personal preferences</li>
-            <li><strong>Error logs:</strong> To help solve technical issues</li>
+            <li><strong>Files for Processing:</strong> Only during active use, never stored</li>
+            <li><strong>App Usage Data:</strong> Anonymous statistics to improve features</li>
+            <li><strong>Device Information:</strong> Basic info for compatibility</li>
+            <li><strong>Crash Reports:</strong> Error logs to fix bugs</li>
+            <li><strong>Ad Interaction Data:</strong> Through Google AdMob (anonymous)</li>
         </ul>
 
         <h2><i class="fas fa-cogs"></i> 2. How We Use Your Information</h2>
-        <p>We use data only to provide better service:</p>
+        <p>Your data is used only for:</p>
         <ol>
-            <li>Provide file conversion services (PDF, ZIP, OCR)</li>
-            <li>Improve app performance and stability</li>
-            <li>Fix bugs and solve problems</li>
-            <li>Develop new features based on needs</li>
-            <li>Ensure app security and protect your data</li>
+            <li><strong>Local File Processing:</strong> All conversions happen on your device</li>
+            <li><strong>Background Removal:</strong> Images sent temporarily to Remove.bg API</li>
+            <li><strong>App Improvement:</strong> Anonymous usage analytics</li>
+            <li><strong>Bug Fixing:</strong> Crash reports to improve stability</li>
+            <li><strong>Ad Personalization:</strong> Through Google AdMob (you can opt-out)</li>
         </ol>
 
-        <h2><i class="fas fa-shield-alt"></i> 3. Required Permissions</h2>
-        <div class="note-box">
-            <h3><i class="fas fa-key"></i> Permission Explanation</h3>
-            <ul>
-                <li><strong><i class="fas fa-folder"></i> Storage (Read/Write):</strong> To open and save files</li>
-                <li><strong><i class="fas fa-camera"></i> Camera:</strong> To scan documents using OCR</li>
-                <li><strong><i class="fas fa-wifi"></i> Internet (Optional):</strong> For ads only</li>
-            </ul>
-            <p><strong>Note:</strong> All files stay on your device.</p>
+        <h2><i class="fas fa-tasks"></i> 3. App Features & Data Handling</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <h4><i class="fas fa-file-pdf"></i> PDF Operations</h4>
+                <p><strong>All offline:</strong> Convert, merge, split, compress, lock/unlock</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fas fa-file-archive"></i> ZIP Operations</h4>
+                <p><strong>All offline:</strong> Create, extract, protect, view, repair</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fas fa-image"></i> Image Processing</h4>
+                <p><strong>Mostly offline:</strong> Format conversion, OCR, scanner</p>
+                <p><strong>Online:</strong> Background removal via Remove.bg API</p>
+            </div>
         </div>
 
-        <h2><i class="fas fa-lock"></i> 4. Data Protection</h2>
+        <h2><i class="fas fa-shield-alt"></i> 4. Third-Party Services</h2>
         <div class="warning-box">
-            <h3><i class="fas fa-user-shield"></i> Your Data Security</h3>
+            <h3><i class="fas fa-external-link-alt"></i> External Services We Use</h3>
             <ul>
-                <li><strong>Local Processing:</strong> All conversions happen on your device</li>
-                <li><strong>No Storage:</strong> We don't keep copies of your files</li>
-                <li><strong>No Sharing:</strong> We don't sell or rent your data</li>
-                <li><strong>Encryption:</strong> We encrypt sensitive data</li>
+                <li><strong>Remove.bg API:</strong> For AI background removal only</li>
+                <li><strong>Google AdMob:</strong> For displaying ads (configurable)</li>
+                <li><strong>Firebase Remote Config:</strong> For managing API keys securely</li>
+            </ul>
+            <p><strong>Important:</strong> Files sent to Remove.bg are deleted immediately after processing.</p>
+        </div>
+
+        <h2><i class="fas fa-lock"></i> 5. Data Protection & Security</h2>
+        <div class="note-box">
+            <h3><i class="fas fa-user-shield"></i> Our Security Measures</h3>
+            <ul>
+                <li><strong>Local Processing:</strong> 90% of features work completely offline</li>
+                <li><strong>No File Storage:</strong> We don't keep copies of your files</li>
+                <li><strong>Encrypted Communication:</strong> HTTPS for all API calls</li>
+                <li><strong>API Key Protection:</strong> Keys stored securely in Firebase</li>
+                <li><strong>Minimal Permissions:</strong> Only what's necessary for features</li>
             </ul>
         </div>
 
-        <h2><i class="fas fa-balance-scale"></i> 5. Your Rights</h2>
-        <p>You have full rights to:</p>
+        <h2><i class="fas fa-balance-scale"></i> 6. Your Rights & Choices</h2>
+        <p>You have the right to:</p>
         <ul>
-            <li>Know what data we collect</li>
-            <li>Request deletion of your data</li>
-            <li>Refuse to grant permissions</li>
-            <li>Opt-out of ads</li>
+            <li><strong>Opt-out of Ads:</strong> Through Google AdMob settings</li>
+            <li><strong>Disable Online Features:</strong> Use only offline features</li>
+            <li><strong>Revoke Permissions:</strong> At any time in app settings</li>
+            <li><strong>Clear App Data:</strong> Delete all locally stored data</li>
+            <li><strong>Request Information:</strong> About what data we have</li>
         </ul>
 
+        <h2><i class="fas fa-child"></i> 7. Children's Privacy</h2>
+        <p>Our app is suitable for users of all ages. We do not knowingly collect personal information from children under 13.</p>
+
+        <h2><i class="fas fa-sync-alt"></i> 8. Policy Updates</h2>
+        <p>We may update this policy. Changes will be posted here with updated "Last Updated" date.</p>
+
         <div class="contact-box">
-            <h3><i class="fas fa-envelope"></i> Questions & Concerns</h3>
-            <p>We value your feedback:</p>
-            <a href="mailto:privacy@docify.app?subject=Privacy Policy Inquiry" class="email-link">
-                <i class="fas fa-paper-plane"></i> privacy@docify.app
+            <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+            <p>For privacy concerns or questions:</p>
+            <a href="mailto:privacy@docifire.app?subject=Privacy Policy Inquiry" class="email-link">
+                <i class="fas fa-paper-plane"></i> privacy@docifire.app
             </a>
             <p style="margin-top: 15px; font-size: 14px; color: #666;">
-                <i class="fas fa-clock"></i> Average response: 24-48 hours
+                <i class="fas fa-clock"></i> We respond within 24-48 hours
             </p>
         </div>
 
@@ -231,11 +276,15 @@
                 <i class="fas fa-file-contract"></i> Terms of Service
             </a>
             |
-            <a href="index.html" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
+            <a href="privacy.html" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
                 <i class="fas fa-shield-alt"></i> Privacy Policy
             </a>
+            |
+            <a href="https://github.com/yourusername/docifire" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
+                <i class="fab fa-github"></i> GitHub Repository
+            </a>
             <p style="margin-top: 20px; color: #888; font-size: 14px;">
-                <i class="far fa-copyright"></i> 2024 Docify. All rights reserved.
+                <i class="far fa-copyright"></i> 2024 Docifire Document Scanner. All rights reserved.
             </p>
         </div>
     </div>
@@ -248,7 +297,7 @@
             document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
             
             // Scroll effects
-            const sections = document.querySelectorAll('h2, .note-box, .warning-box');
+            const sections = document.querySelectorAll('h2, .note-box, .warning-box, .feature-item');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
