@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service - Docify</title>
+    <title>Terms of Service - Docifire Document Scanner</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -59,6 +59,11 @@
             border-left: 4px solid #F44336;
             padding-left: 15px;
         }
+        h3 {
+            color: #3F51B5;
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
         .important-box {
             background: linear-gradient(135deg, #FFF3E0, #FFEBEE);
             padding: 20px;
@@ -97,6 +102,19 @@
             left: 0;
             top: -4px;
         }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+        }
         .footer-links {
             text-align: center;
             margin-top: 30px;
@@ -108,6 +126,7 @@
             .container { padding: 25px; margin: 20px auto; }
             h1 { font-size: 28px; }
             h2 { font-size: 22px; }
+            .feature-grid { grid-template-columns: 1fr; }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -118,57 +137,124 @@
             <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #FF9800, #F44336); border-radius: 25px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 40px; font-weight: bold; box-shadow: 0 10px 30px rgba(255,152,0,0.3);">
                 <i class="fas fa-gavel"></i>
             </div>
-            <h3 style="margin-top: 15px; color: #F44336;">Docify Terms of Service</h3>
+            <h3 style="margin-top: 15px; color: #F44336;">Docifire Document Scanner</h3>
+            <p style="color: #666; margin-top: 10px;">Terms of Service</p>
         </div>
         
         <h1>Terms of Service</h1>
         
         <div class="important-box">
             <h3><i class="fas fa-exclamation-triangle"></i> Important Notice</h3>
-            <p>By using Docify, you agree to these terms and conditions.</p>
+            <p>By downloading, installing, or using Docifire Document Scanner, you agree to be bound by these Terms of Service.</p>
         </div>
 
         <h2><i class="fas fa-check-circle"></i> 1. Acceptance of Terms</h2>
-        <p>Your use of Docify is subject to these terms.</p>
+        <p>These Terms constitute a legally binding agreement between you and the developers of Docifire.</p>
 
-        <h2><i class="fas fa-ban"></i> 2. Restrictions</h2>
-        <p>You may NOT:</p>
-        <ul>
-            <li>Reverse engineer or decompile the app</li>
-            <li>Resell or redistribute the service</li>
-            <li>Use the app for illegal purposes</li>
-            <li>Attempt to bypass security measures</li>
-        </ul>
+        <h2><i class="fas fa-tools"></i> 2. App Description & Features</h2>
+        <p>Docifire Document Scanner provides the following features:</p>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-file-pdf fa-2x" style="color: #F44336;"></i>
+                <h4>PDF Operations</h4>
+                <p style="font-size: 12px;">Convert, merge, split, compress, lock/unlock</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-archive fa-2x" style="color: #FF9800;"></i>
+                <h4>ZIP Operations</h4>
+                <p style="font-size: 12px;">Create, extract, protect, repair, view</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-image fa-2x" style="color: #4CAF50;"></i>
+                <h4>Image Processing</h4>
+                <p style="font-size: 12px;">OCR, scanner, format conversion, background removal</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-exchange-alt fa-2x" style="color: #2196F3;"></i>
+                <h4>File Conversion</h4>
+                <p style="font-size: 12px;">Text, Word, Excel, PPT to PDF</p>
+            </div>
+        </div>
 
-        <h2><i class="fas fa-file-alt"></i> 3. File Responsibility</h2>
+        <h2><i class="fas fa-ban"></i> 3. Prohibited Activities</h2>
         <div class="warning-box">
-            <h3><i class="fas fa-exclamation-circle"></i> Your Responsibility</h3>
+            <h3><i class="fas fa-exclamation-circle"></i> You May NOT:</h3>
             <ul>
-                <li>Files you upload and process</li>
-                <li>Backing up your files</li>
-                <li>Ensuring files don't contain copyrighted material</li>
-                <li>Compliance with local laws</li>
+                <li>Use the app for illegal or unauthorized purposes</li>
+                <li>Reverse engineer, decompile, or disassemble the app</li>
+                <li>Resell, redistribute, or commercialize the app</li>
+                <li>Bypass security features or API rate limits</li>
+                <li>Upload files containing malware, viruses, or harmful code</li>
+                <li>Violate intellectual property rights</li>
+                <li>Use the app to process sensitive personal data without consent</li>
             </ul>
         </div>
 
-        <h2><i class="fas fa-shield-alt"></i> 4. Disclaimer</h2>
-        <p>Docify is provided "AS IS" without warranties.</p>
-        <p>We are not responsible for:</p>
+        <h2><i class="fas fa-file-alt"></i> 4. User Responsibilities</h2>
+        <p>You are responsible for:</p>
         <ul>
-            <li>Any data loss</li>
-            <li>Damages from app use</li>
-            <li>Accuracy of conversion results</li>
+            <li><strong>File Content:</strong> Ensuring files don't contain copyrighted or illegal material</li>
+            <li><strong>Data Backup:</strong> Backing up your files before processing</li>
+            <li><strong>Legal Compliance:</strong> Following all applicable laws and regulations</li>
+            <li><strong>Account Security:</strong> Protecting your device from unauthorized access</li>
+            <li><strong>API Usage:</strong> Not abusing Remove.bg API service</li>
         </ul>
 
-        <h2><i class="fas fa-sync-alt"></i> 5. Modifications</h2>
-        <p>We may update these terms. We will notify you of changes.</p>
+        <h2><i class="fas fa-shield-alt"></i> 5. Third-Party Services</h2>
+        <p>Docifire uses the following third-party services:</p>
+        <ul>
+            <li><strong>Remove.bg API:</strong> For AI background removal</li>
+            <li><strong>Google AdMob:</strong> For displaying advertisements</li>
+            <li><strong>Firebase:</strong> For remote configuration and analytics</li>
+        </ul>
+        <p>By using Docifire, you also agree to their respective terms:</p>
+        <ul>
+            <li><a href="https://www.remove.bg/terms">Remove.bg Terms of Service</a></li>
+            <li><a href="https://www.google.com/policies/technologies/ads/">Google AdMob Policies</a></li>
+            <li><a href="https://firebase.google.com/terms">Firebase Terms of Service</a></li>
+        </ul>
 
-        <h2><i class="fas fa-envelope"></i> 6. Contact</h2>
-        <p>For questions: <strong>legal@docify.app</strong></p>
+        <h2><i class="fas fa-exclamation-triangle"></i> 6. Disclaimer of Warranties</h2>
+        <div class="warning-box">
+            <h3><i class="fas fa-shield-virus"></i> Important Disclaimer</h3>
+            <p>Docifire is provided "AS IS" without any warranties, express or implied.</p>
+            <p>We do not guarantee:</p>
+            <ul>
+                <li>100% accuracy in file conversions</li>
+                <li>Perfect background removal results</li>
+                <li>Continuous availability of online features</li>
+                <li>Protection against data loss (always backup your files)</li>
+                <li>Compatibility with all file formats or devices</li>
+            </ul>
+        </div>
+
+        <h2><i class="fas fa-balance-scale"></i> 7. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, we shall not be liable for:</p>
+        <ul>
+            <li>Any direct, indirect, or consequential damages</li>
+            <li>Data loss or corruption</li>
+            <li>Service interruptions or downtime</li>
+            <li>Accuracy of OCR or conversion results</li>
+            <li>Third-party service issues (Remove.bg, AdMob, etc.)</li>
+        </ul>
+
+        <h2><i class="fas fa-sync-alt"></i> 8. Modifications to Terms</h2>
+        <p>We reserve the right to modify these Terms at any time. Continued use after changes constitutes acceptance.</p>
+
+        <h2><i class="fas fa-flag"></i> 9. Termination</h2>
+        <p>We may terminate or suspend access to the app immediately if you violate these Terms.</p>
+
+        <h2><i class="fas fa-gavel"></i> 10. Governing Law</h2>
+        <p>These Terms shall be governed by the laws of [Your Country/State], without regard to its conflict of law provisions.</p>
+
+        <h2><i class="fas fa-envelope"></i> 11. Contact Information</h2>
+        <p>For legal inquiries or questions about these Terms:</p>
+        <p><strong>Email:</strong> legal@docifire.app</p>
+        <p><strong>Response Time:</strong> We aim to respond within 3-5 business days</p>
 
         <div class="acceptance-box">
-            <h3><i class="fas fa-handshake"></i> Agreement</h3>
-            <p>By using Docify, you agree to these Terms of Service.</p>
+            <h3><i class="fas fa-handshake"></i> Agreement Acceptance</h3>
+            <p>By using Docifire Document Scanner, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</p>
             <p style="margin-top: 15px; font-size: 14px; color: #666;">
                 <i class="fas fa-calendar-alt"></i> Effective Date: <span id="currentDate">January 1, 2024</span>
             </p>
@@ -176,15 +262,19 @@
 
         <div class="footer-links">
             <p><strong>Related Documents:</strong></p>
-            <a href="index.html" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
+            <a href="privacy.html" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
                 <i class="fas fa-shield-alt"></i> Privacy Policy
             </a>
             |
             <a href="terms.html" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
                 <i class="fas fa-file-contract"></i> Terms of Service
             </a>
+            |
+            <a href="https://github.com/yourusername/docifire" style="color: #3F51B5; text-decoration: none; margin: 0 10px;">
+                <i class="fab fa-github"></i> GitHub Repository
+            </a>
             <p style="margin-top: 20px; color: #888; font-size: 14px;">
-                <i class="far fa-copyright"></i> 2024 Docify. Version 1.0
+                <i class="far fa-copyright"></i> 2024 Docifire Document Scanner. Version 1.0.0
             </p>
         </div>
     </div>
@@ -197,7 +287,7 @@
             document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
             
             // Scroll effects
-            const sections = document.querySelectorAll('h2, .important-box, .warning-box');
+            const sections = document.querySelectorAll('h2, .important-box, .warning-box, .feature-card');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
